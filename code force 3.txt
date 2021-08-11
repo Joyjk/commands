@@ -1,0 +1,62 @@
+#include <iostream>
+#include <string>
+#include <string.h>
+#include <conio.h>
+#include <cstring>
+#include <cctype>
+#include <bits/stdc++.h>
+using namespace std;
+void stringLwr(char *s)
+{
+    int i=0;
+    while(s[i]!='\0')
+    {
+        if(s[i]>='A' && s[i]<='Z'){
+            s[i]=s[i]+32;
+        }
+        ++i;
+    }
+}
+int vowelChk(char ch){
+   if (ch == 'a'|| ch== 'A'||  ch == 'e'|| ch== 'E' ||  ch == 'i'|| ch== 'I' ||  ch =='o'|| ch== 'O' ||  ch == 'u'|| ch== 'U' || ch=='y'|| ch== 'Y')
+      return 1;
+   else
+      return 0;
+}
+
+int main(){
+   char s[100], t[100];
+   int c, d = 0;
+
+   cin>>s;
+   for(c = 0; s[c] != '\0'; c++) {
+
+
+
+      if(vowelChk(s[c]) == 0){
+         t[d] = s[c];
+         d++;
+      }
+   }
+   t[d] = '\0';
+   strcpy(s, t);
+
+
+
+    stringLwr(s);
+
+   for(int i = 0; s[i] != '\0'; i++)
+   {
+
+
+
+
+       cout<<'.'<<s[i];
+   }
+
+
+
+
+   return 0;
+}
+

@@ -1,0 +1,38 @@
+to check status of git folder in pc
+	|
+git status
+----------------------------------------------------------------------------------
+To initialize repository
+	|
+git init
+-----------------------------------------------------------------------------
+add to stage
+	|
+git add --all
+
+git add .
+------------------------------------------------------------------------------
+back 
+	|
+git reset
+-----------------------------------------------------------------------------
+file commit
+	|
+git commit -m "this is learn with sumit commit"
+------------------------------------------------------------------------------
+back to previous status
+	|
+git reset HEAD~
+---------------------------------------------------------------------------
+get back deleted file
+	|
+git reset --hard
+---------------------------------------------------------------------------------
+add together
+	|
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Joyjk/Advance-Programming-with-.NET.git
+git push -u origin main
